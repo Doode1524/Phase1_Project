@@ -2,6 +2,8 @@ require 'pry'
 require 'bundler'
 require 'json'
 require 'rest-client'
+require 'net/http'
+require 'open-uri'
 
 Bundler.require
 
