@@ -11,25 +11,25 @@ class Api
      response = RestClient.get(base_url + '/lol/stats/json/Champions?key=aacc8ac9a58640728208a410e55e38d0')
      data = JSON.parse(response.body)
 
-        data.each do |data|
-            Champions.new(data["Name"])
+        data.each do |champ_data|
+            Champions.new(champ_data["Name"], champ_data["Attack"])
         
      
         end
-        get_stats
+        # get_stats
         
         # binding.pry
     
     end
 
-    def self.get_stats
-        response = RestClient.get(base_url + '/lol/stats/json/Champions?key=aacc8ac9a58640728208a410e55e38d0')
-        data = JSON.parse(response.body)
-        data.each do |data|
-            Champions.new(data["Attack"])
+    # def self.get_stats
+    #     response = RestClient.get(base_url + '/lol/stats/json/Champions?key=aacc8ac9a58640728208a410e55e38d0')
+    #     data = JSON.parse(response.body)
+    #     data.each do |data|
+    #         Champions.new(data["Attack"])
 
-        end
-    end
+    #     end
+    # end
 end
 
 

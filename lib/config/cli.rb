@@ -38,7 +38,7 @@ class Cli
     end
     
     def champ_details(champion)
-        Api.get_stats("Attack")
+        # Api.get_stats("Attack")
         puts "Attack Damage: #{champion.attack}"
     end
 

@@ -4,7 +4,7 @@ class Champions
     @@all = []
 
 
-    def initialize(name)
+    def initialize(name, attack)
         @name = name
         @attack = attack
 
