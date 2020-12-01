@@ -1,5 +1,5 @@
 class Champions
-    attr_accessor :name, :magic, :attack, :defense, :hp, :mp, :movespeed, :armor, :attackrange, :attackdamage, :title, :data
+    attr_accessor :name, :magic, :attack, :defense, :title, :data
 
     @@all = []
 

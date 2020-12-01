@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/environment'
- Cli.new.start12
+ Cli.new.start
