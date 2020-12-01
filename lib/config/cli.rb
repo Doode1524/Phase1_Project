@@ -4,7 +4,7 @@ class Cli
         puts "--------------------------------------------------"
         puts "                                                  |"
         puts "--------------------------------------------------"
-        puts "Welcome to Legend"
+        puts "WELCOME TO LEGEND!!"
         puts "Legend is an app that gives base statistics on Champions in the MOBA game League of Legends!"
         puts "--------------------------------------------------"
         puts "                                                  |"
@@ -106,13 +106,10 @@ class Cli
         input = get_input
         if input == "1"
             attack_champions
-            main_menu_options
         elsif input == "2"
             magic_champions
-            main_menu_options
         elsif input == "3"
             support_champions
-            main_menu_options
         else
             main_menu_options
         end
