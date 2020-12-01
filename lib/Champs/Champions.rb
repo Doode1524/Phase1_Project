@@ -16,9 +16,5 @@ class Champions
     def self.all
         @@all
     end
-
-
-
-
 end
     

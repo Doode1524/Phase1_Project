@@ -70,7 +70,7 @@ class Cli
 
     def filter_by_attack
         Champions.all.each.with_index(1) do |champion, index|
-            if champion.attack > 5.0
+            if champion.attack > 6.0
                 puts "#{index}. #{champion.name}: #{champion.attack}"
             end
         end
@@ -79,7 +79,7 @@ class Cli
 
     def filter_by_magic
         Champions.all.each.with_index(1) do |champion, index|
-            if champion.magic > 5.0
+            if champion.magic > 6.0
                 puts "#{index}. #{champion.name}: #{champion.magic}"
             end
         end
@@ -88,7 +88,7 @@ class Cli
 
     def filter_by_defense
         Champions.all.each.with_index(1) do |champion, index|
-            if champion.defense > 5.0
+            if champion.defense > 6.0
                 puts "#{index}. #{champion.name}: #{champion.defense}"
             end
         end
