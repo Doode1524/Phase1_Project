@@ -1,8 +1,7 @@
 # Phase1Project
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/Phase1_Project`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+"WELCOME TO LEGEND!!"
+ "Legend is an app that gives base statistics on Champions in the MOBA game League of Legends!"
 
 ## Installation
 
@@ -22,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+run "ruby bin/run" in console to start
 
 ## Development
 

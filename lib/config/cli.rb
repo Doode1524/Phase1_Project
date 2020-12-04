@@ -64,8 +64,13 @@ class Cli
         input = get_input
         index = input.to_i - 1
         champ = Champions.all[index]
-        champ_details(champ)
-        main_menu_options
+        if index.between?(0, 151)
+            champ_details(champ)
+            main_menu_options
+        else
+            puts 'Invalid option! Please choose another option!:'
+            champ_detail_list
+        end
     end
 
     def filter_by_attack
