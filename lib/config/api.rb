@@ -52,6 +52,8 @@ end
 
 
 
+
+
 #   def get_info
 #     uri = URI.parse(URL)
 #     response = Net::HTTP.get_response(uri)

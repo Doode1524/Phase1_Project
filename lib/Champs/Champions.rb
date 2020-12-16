@@ -7,7 +7,7 @@ class Champions
     def initialize(name, magic, defense, title, attack)
         @name = name
         @attack = attack
-        @magic = magic
+        @magic = magic  
         @title = title
         @defense = defense
         @@all << self
@@ -15,6 +15,7 @@ class Champions
 
     def self.all
         @@all
+       
     end
 end
     

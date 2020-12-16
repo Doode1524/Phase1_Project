@@ -10,7 +10,7 @@ class Cli
         puts "                                                  |"
         puts "--------------------------------------------------"
         Api.load_data
-    main_menu_options
+        main_menu_options
     end
 
     def main_menu_options
@@ -26,7 +26,7 @@ class Cli
             list_champions
         elsif input == "2"
             filter_menu
-        elsif input == "exit"
+        elsif input.downcase == "exit" 
             exit
         else
             main_menu_options
@@ -64,7 +64,7 @@ class Cli
         input = get_input
         index = input.to_i - 1
         champ = Champions.all[index]
-        if index.between?(0, 151)
+        if index.between?(0, champ.length -1)
             champ_details(champ)
             main_menu_options
         else
